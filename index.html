@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/67b1fb20cf.js" crossorigin="anonymous"></script>  
+    <title>Factotron</title>
+</head>
+<body>
+
+  
+<div class="jumbotron text-center">
+    <form>
+        <div class="form-group">
+            <h1>Factotron</h1>
+            <textarea id="factArea" value="" class="form-control col-xl-8 offset-xl-2" placeholder="Entrez votre fact ici..."></textarea>
+        </div>
+        <div id="radio" class="form-check">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary checked">
+                    <input type="radio" name="options" value="vraie"> Vrai
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" value="fausse"> Faux
+                </label>
+            </div>
+        </div>
+        <div id="verify" class="form-group">
+            <button onclick="userFact()" class="btn btn-primary">Verifier</button>
+        </div>
+    </form>
+    <div class="form-group">
+        <button onclick="addNodeFact()" id="add" class="btn btn-danger">
+            <i class="far fa-plus-square"></i>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="factZone" class="text-center col-xl-8 offset-xl-2"></div>
+    </div> 
+</div>
+
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
